@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bad Code Example</title>
+</head>
+<body>
+    <h1>User Dashboard</h1>
+    
+    <!-- Issue: Inline event handlers are bad practice -->
+    <input type="text" id="userInput" placeholder="Enter your name">
+    <button onclick="handleUser()">Submit</button>
+
+    <div id="output"></div>
+
+    <!-- Bug: Missing ID for this element which JS tries to find later -->
+    <p>Current Score: <span class="score-display">0</span></p>
+
+    <script src="script.js"></script>
+</body>
+</html>
